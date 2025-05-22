@@ -1,0 +1,88 @@
+
+:root {
+  --bg-secondary: #1f2937;
+  --border: #374151;
+  --accent-color: #3b82f6;
+  --accent-rgb: 59, 130, 246;
+  --text: #f9fafb;
+  --text-secondary: #9ca3af;
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.userPanel {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.userImage {
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  transition: transform 0.3s;
+}
+
+.userImage:hover {
+  transform: scale(1.05);
+}
+
+.userInfo {
+  margin-left: 0.75rem;
+}
+
+.username {
+  color: var(--text);
+  font-weight: 700;
+  margin: 0;
+}
+
+.userTitle {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.menu {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+}
+.list li + li:hover,.active {
+  background-color: rgba(var(--accent-rgb), 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+.list li + li {
+  margin-top: 1rem;
+}
